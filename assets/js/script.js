@@ -87,7 +87,7 @@ var weather = function(lat,lon,name){
 var gLocation = function(city){
     console.log("city is"+city)
     $(".remove").remove();
-    var url = "http://api.openweathermap.org/geo/1.0/direct?q="+city+"&appid="+key;
+    var url = "https://api.openweathermap.org/geo/1.0/direct?q="+city+"&appid="+key;
     fetch(url).then(function(response){
         return response.json();
     })
