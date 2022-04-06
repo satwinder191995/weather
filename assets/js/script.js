@@ -3,7 +3,7 @@ var button = document.querySelector(".button");
 var key = "de41c9b56aaee5df58270392a4a59061";
 var searchedCity =[];
 
-
+//Appending forecast in front page
 var dailyForecast = function(data,i){
     console.log(i);
     var days = "days"+i;
@@ -21,7 +21,7 @@ var dailyForecast = function(data,i){
 
 }
 
-
+// fetch api used for 5 days
 var weather = function(lat,lon,name){
     var url = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&units=imperial&exclude={part}&appid="+key;
     fetch(url).then(function(response){
@@ -83,7 +83,7 @@ var weather = function(lat,lon,name){
 });
 }
 
-
+// fetch api used to get longitude and latitude
 var gLocation = function(city){
     console.log("city is"+city)
     $(".remove").remove();
@@ -116,7 +116,7 @@ localStorage.setItem("cities", JSON.stringify(initial));
 
 
 
-
+// to get values from the local storage
 var loadvalues = function(){
     var getCities =localStorage.getItem("cities");
      console.log("cities are:"+ getCities)
@@ -129,13 +129,8 @@ var loadvalues = function(){
          searchedCity=JSON.parse(getCities);
          console.log("cities"+searchedCity[0].city);
          console.log("get cities"+ searchedCity.length);
-        //  for(var i=0;i<searchedCity.length;i++){
-        //  $(".searched").append("<button class=' removeButton w-75 mt-2 text-center' id='"+searchedCity[i].city+"'>"+searchedCity[i].city+"</button>")
-        //  }
      }
-    //  gLocation(searchedCity[0].city);
      return searchedCity;
-    //  console.log(searchedCity[0].city);
      
 
  }

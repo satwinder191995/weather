@@ -3,15 +3,7 @@ h1{
     text-align:center;
     background-color: rgb(50, 50, 104);
 }
-/* section{
-    display:flex;
-} */
-/* .sectionLeft{
-    width:40%;
-} */
-/* .sectionRight{
-    width:100%;
-} */
+
 input{
     display:block;
     width:90%;
@@ -22,64 +14,13 @@ button{
     width:90%;
     margin:10px auto;
 }
-/* h2{
-    margin-left:10px;
-    color:black;
-} */
+
 hr{
     height: 2px;
     width:90%;
     margin:10px auto;
     background-color:grey;
 }
-
-/* .sectionTop{
-display:block;
-height:280px;
-border:1px solid black;
-padding:20px;
-} */
-
-/* .sectionBottom{
-    display:block;
-    height:250px;
-    } */
-/* .dayForecast{
-    display:flex;
-    color:white;
-    height:auto;
-} */
-/* .days0{
-    background-color: grey;
-    color:white;
-    width:250px;
-    height:300px;
-    margin-right:20px;
-}
-.days1{
-    background-color: grey;
-    color:white;
-    width:250px;
-    height:300px;
-}
-.days2{
-    background-color: grey;
-    color:white;
-    width:250px;
-    height:300px;
-}
-.days3{
-    background-color: grey;
-    color:white;
-    width:250px;
-    height:300px;
-}
-.days4{
-    background-color: grey;
-    color:white;
-    width:250px;
-    height:300px;
-} */
 
 .uv{
     padding:0px 20px 0 20px;
